@@ -31,6 +31,7 @@ export const ButtonTitle = styled.Text`
 
 export const Item = styled.View`
     margin: 0 22px 10px;
+    z-index: 1;
     color: red;
     border-radius: 5px;
     border-color: #eee;

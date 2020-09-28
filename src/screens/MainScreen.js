@@ -8,6 +8,7 @@ export const MainScreen = ({ addTodo, todos, removeTodo, onEditHandler }) => {
         <View>
             <AddTodo onSubmit={addTodo}/>
             <FlatList
+                keyboardShouldPersistTaps='always'
                 keyExtractor={ item => item.id.toString()}
                 data={todos}
                 renderItem={({item}) =>
