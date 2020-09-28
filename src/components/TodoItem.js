@@ -4,7 +4,7 @@ import { Item } from '../styledComponents';
 
 export const TodoItem = ({ item, onRemoveItem, onEdit }) => {
     return (
-        <TouchableOpacity
+        <TouchableOpacity activeOpacity={0.5}
             onPress={() => onEdit(item.id)}
             onLongPress={() => onRemoveItem(item.id)}
         >
