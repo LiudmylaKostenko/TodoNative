@@ -1,25 +1,12 @@
 import  React from 'react';
-import {Text, View, StyleSheet } from 'react-native';
+import { NavbarStyled, TitleApplication } from '../styledComponents';
 
-export const Navbar = ({title}) => {
-    return(
-        <View style={styles.navbar}>
-            <Text style={ styles.text}>{title}</Text>
-        </View>
+export const Navbar = ({ title }) => {
+    return (
+        <NavbarStyled>
+            <TitleApplication>{title}</TitleApplication>
+        </NavbarStyled>
     )
 };
 
-const styles = new StyleSheet.create({
-    navbar: {
-        height: 60,
-        alignItems: 'center',
-        justifyContent: 'flex-end',
-        backgroundColor: '#a51ede',
-        paddingBottom: 5
-    },
-    text: {
-        color: '#1ede3e',
-        fontSize: 16,
-        fontWeight: 'bold'
-    }
-});
+
